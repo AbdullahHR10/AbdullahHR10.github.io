@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding-top: 10vh;
+}
+
+/* Navigation bar section */
+
+.navigationBar {
+    background-color: #031540;
+    height: 10vh;
+    font-size: 1.8rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3rem;
+    top: 0%;
+    z-index: 1000;
+}
+.navigationBar a {
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
+}
+.navigationBar a:hover {
+    color: #00abf0;
+}
+.navigationBar .myname {
+    margin-right: auto;
+    margin-left: 6rem;
+}
+
+/* Home section */
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.home .weclome-container {
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    color: #031540;
+    margin-bottom: 20rem;
+    font-size: 2rem;
+    width: 35%;
+}
+.weclome-container h1 {
+    font-weight: 1000;
+    margin-bottom: 5rem;
+}
+.weclome-container a {
+    background-color: #00abf0;
+    border-radius: 40px;
+    padding: 12px 35px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+}
+.weclome-container .homebtns a {
+}
+.weclome-container a:hover {
+    box-shadow: none;
+}
+.scroll-container {
+    font-size: 7rem;
+    text-decoration: none;
+    margin-bottom: 6rem;
+    pointer-events: none;
+    animation: moveUpDown 2s ease-in-out infinite;
+}
+.scroll-container a {
+    color: #031540;
+    pointer-events: auto;
+}
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes animateText {
+    0%,95%,100% {
+        background-position: -1000px 0;
+    }
+    65%,85% {
+        background-position: 0 0;
+    }
+}
+
+/* About me section */
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.description {
+    background-color: #031540;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+    width: 70%;
+    height: 70vh;
+    padding: 3rem;
+}
+.description .title {
+    color: #00abf0;
+    width: 25%;
+    border-bottom: 15px solid #00abf0;
+}
+.description .title h5 {
+    font-size: 3rem;
+}
+.description .title h2 {
+    position: absolute;
+    border-bottom: 1px solid #00abf0;
+    width: 50%;
+}
+.description h1 {
+    font-size: 3.5rem;
+    align-self: flex-start;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
+    order: 0;
+}
+.description h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    order: 2;
+    color: transparent;
+    -webkit-text-stroke: .5px #00abf0;
+    background-image: linear-gradient(#00abf0, #00abf0);
+    background-repeat: no-repeat;
+    background-clip: 0;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText2 4s linear infinite;
+}
+@keyframes animateText2 {
+    0%,95%,100% {
+        background-position: -410px 0;
+    }
+    65%,85% {
+        background-position: 0 0;
+    }
+}
+.description p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    order: 3;
+    width: 60%;
+}
+.description .socials {
+    order: 5;
+    align-self: flex-end;
+    width: 400px;
+    margin-top: -6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.description .socials a {
+    color: #00abf0;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-decoration: none;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+.description .socials a:hover {
+    background-color: #00abf0;
+    color:white;
+    border-color: #00abf0;
+    box-shadow: 0 0 10px #00abf0;
+}
+.description .resumeBtn {
+    padding: 12px 35px;
+    margin-top: 4rem;
+    background-color: #00abf0;
+    border-radius: 40px;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #00abf0;
+    order: 4;
+}
+.description .resumeBtn:hover {
+    box-shadow: none;
+}
+.photoframe {
+    background-color: #031540;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 400px;
+    height: 400px;
+    order: 3;
+    border-radius: 50%;
+    border: 25px solid #00abf0;
+    outline: 25px solid #031540;
+    overflow: hidden;
+}
+
+/* Skills section */
+
+
+.skills {
+    background-color: white;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.skillstitle h1 {
+    font-size: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+    background-color: #031540;
+    border-bottom: 3px solid #00abf0;
+    color: #00abf0;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.skillstitle h2 {
+    position: absolute;
+    border-bottom: 15px solid #00abf0;
+    width: 20%;
+    left:50%;
+    transform: translateX(-50%);
+}
+.skill-container {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    row-gap: 3;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+.skill-container .languages, .skill-container .technologies, .skill-container .myskills{
+    border: 1px solid white;
+    background-color: #031540;
+    width: 35%;
+    height: 75vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 2rem 2rem;
+    margin-bottom: 8rem;
+}
+.skill-container h1 {
+    border-bottom: 1px solid white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.skill-container h3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.skill-container a {
+    border: 1px solid white;
+    display: block;
+    background-color: transparent;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+#Expert {
+    background: linear-gradient(to right, lime 100%, transparent 25%);
+}
+#-Expert {
+    background: linear-gradient(to right, lime 90%, transparent 25%);
+}
+#Proficient {
+    background: linear-gradient(to right, yellow 75%, transparent 25%);
+}
+#-Proficient {
+    background: linear-gradient(to right, yellow 65%, transparent 25%);
+}
+#Amateur {
+    background: linear-gradient(to right, red 35%, transparent 25%);
+}
+.Expert, .-Expert, .Proficient, .-Proficient, .Amateur {
+    color: black;
+    font-weight: 1000;
+}
