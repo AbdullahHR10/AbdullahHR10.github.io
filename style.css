@@ -389,7 +389,3 @@ body {
 .projects-container ul {
     margin-left: 2rem;
 }
-.Expert, .-Expert, .Proficient, .-Proficient, .Amateur {
-    color: black;
-    font-weight: 1000;
-}
