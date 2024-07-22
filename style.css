@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
+    background-color: #121212;
     padding-top: 10vh;
 }
 
@@ -51,7 +52,7 @@ body {
     position: absolute;
     text-align: center;
     align-self: center;
-    color: #031540;
+    color: white;
     margin-bottom: 20rem;
     font-size: 2rem;
     width: 35%;
@@ -71,8 +72,6 @@ body {
     letter-spacing: 1px;
     box-shadow: 0 0 10px #00abf0;
 }
-.weclome-container .homebtns a {
-}
 .weclome-container a:hover {
     box-shadow: none;
 }
@@ -84,7 +83,7 @@ body {
     animation: moveUpDown 2s ease-in-out infinite;
 }
 .scroll-container a {
-    color: #031540;
+    color: white;
     pointer-events: auto;
 }
 @keyframes moveUpDown {
@@ -237,7 +236,7 @@ body {
 
 
 .skills {
-    background-color: white;
+    background-color: #121212;
     color: white;
     height: 100vh;
     display: flex;
@@ -262,20 +261,19 @@ body {
     transform: translateX(-50%);
 }
 .skill-container {
-    height: auto;
     display: flex;
     flex-direction: row;
     row-gap: 3;
     justify-content: space-between;
     margin-top: 6rem;
 }
-.skill-container .languages, .skill-container .technologies, .skill-container .myskills{
-    border: 1px solid white;
+.skill-container .languages, .skill-container .technologies, .skill-container .myskills {
     background-color: #031540;
     width: 35%;
-    height: 75vh;
+    height: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
     margin: 2rem 2rem;
     margin-bottom: 8rem;
 }
@@ -312,6 +310,84 @@ body {
 }
 #Amateur {
     background: linear-gradient(to right, red 35%, transparent 25%);
+}
+.Expert, .-Expert, .Proficient, .-Proficient, .Amateur {
+    color: ;
+    font-weight: 1000;
+}
+
+/* Project container */
+
+.projects {
+    background-color: #121212;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.projectstitle h1 {
+    font-size: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+    background-color: #031540;
+    border-bottom: 3px solid #00abf0;
+    color: #00abf0;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.projectstitle h2 {
+    position: absolute;
+    border-bottom: 15px solid #00abf0;
+    width: 20%;
+    left:50%;
+    transform: translateX(-50%);
+}
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    row-gap: 3;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+.Project1, .Project2, .Project3 {
+    background-color: #031540;
+    width: 35%;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin: 2rem 2rem;
+    margin-bottom: 8rem;
+}
+.projects-container h1 {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+    padding-bottom: 0.6rem;
+    text-align: center;
+}
+.projects-container p {
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+}
+.projects-container h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.projects-container a {
+    border: 1px solid white;
+    display: block;
+    background-color: transparent;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+.projects-container ul {
+    margin-left: 2rem;
 }
 .Expert, .-Expert, .Proficient, .-Proficient, .Amateur {
     color: black;
